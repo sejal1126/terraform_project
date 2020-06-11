@@ -67,3 +67,11 @@ resource "aws_volume_attachment" "vol-attach" {
  volume_id = "${aws_ebs_volume.volume-data.id}"
  instance_id = "${aws_instance.web.id}"
 }
+resource "aws_s3_bucket" "ijkxian" {
+  bucket = "bdjhnxjhc"
+  acl    = "public-read"
+
+  versioning {
+    enabled = true
+  }
+}
